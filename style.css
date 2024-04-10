@@ -782,3 +782,65 @@ a{
   height: 200px; /* Set the height you desire */
   object-fit: cover;
 }
+
+/* photoes */
+.container--10 {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-left: 194px;
+  }
+
+  .con-10 {
+    text-align: center;
+  }
+
+  .con-10_title h4 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .con-10_title h3 {
+    font-size: 32px;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  .photo-section {
+    margin-top: 20px;
+  }
+
+  .photo-section h3 {
+    font-size: 28px;
+    color: #444;
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .photo-item {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .photo-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Media Query for Phones */
+  @media only screen and (max-width: 600px) {
+    .container--10 {
+      margin: 20px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      /* margin-left: 194px; */
+    }
+
+    .photo-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
