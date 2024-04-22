@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gain Weight</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        main {
+            padding: 50px;
+        }
+
+        table {
+            padding: 100px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #73a4e4;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            /* Responsive styles */
+            table {
+                width: 100%;
+            }
+
+            th,
+            td {
+                display: block;
+                text-align: center;
+            }
+
+            th {
+                background-color: #73a4e4;
+                color: #fff;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(odd) {
+                background-color: #fff;
+            }
+
+            th,
+            td {
+                border: none;
+                border-bottom: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand" href="#">
+                <a href="index.html" style="font-size: 3rem;">
+                    Waves Gym
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-items ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Personal Trainer</a></li>
+                            <li><a class="dropdown-item" href="">Start your Fitness Journey</a></li>
+                            <li><a class="dropdown-item" href="">1 on 1 online Program</a></li>
+                            <li><a class="dropdown-item" href="https://userdetails-hw5q.onrender.com/">Become a
+                                    Trainer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Life Style
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="FrontEnd/bmi.html">BMI Tracker</a></li>
+                            <li><a class="dropdown-item" href="FrontEnd/calorie.html">calorie Tracker</a></li>
+                            <li><a class="dropdown-item" href="https://fitnesstracker-rzbu.onrender.com">Habit
+                                    Tracker</a></li>
+                            <li><a class="dropdown-item" href="#">Join Community</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Gym Pass
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://gymmembersdetails-backend-1.onrender.com">Regular
+                                    Pass</a></li>
+                            <li><a class="dropdown-item" href="FrontEnd/emailOtp.html">1 day Free Trial</a></li>
+                            <li><a class="dropdown-item" href="FrontEnd/Query.html">Query ?</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Know More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="FrontEnd/aboutus.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="FrontEnd/contact.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="">Trainers</a></li>
+                            <li><a class="dropdown-item" href="">Feedback</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Diet Chart</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Day 1</td>
+                    <td>
+                        <p>6:30 AM: Cucumber Detox Water (1 glass)</p>
+                        <p>8:00 AM: Oats Porridge in Skimmed Milk (1 bowl)</p>
+                        <p>Mixed Nuts (25 grams)</p>
+                        <p>12:00 PM: Skimmed Milk Paneer (100 grams)</p>
+                        <p>2:00 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>2:10 PM: Dal (1 katori) Gajar Matar Sabzi (1 katori)</p>
+                        <p>Roti (1 roti/chapati)</p>
+                        <p>4:00 PM: Cut Fruits (1 cup) Buttermilk (1 glass)</p>
+                        <p>5:30 PM: Tea with Less Sugar and Milk (1 teacup)</p>
+                        <p>8:50 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>9:00 PM: Dal (1 katori) Lauki Sabzi (1 katori) Roti (1 roti/chapati)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Day 2</td>
+                    <td>
+                        <p>6:30 AM: Cucumber Detox Water (1 glass)</p>
+                        <p>8:00 AM: Curd (1.5 katori) Mixed Vegetable Stuffed Roti (2 pieces)</p>
+                        <p>12:00 PM: Skimmed Milk Paneer (100 grams)</p>
+                        <p>2:00 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>2:10 PM: Lentil Curry (0.75 bowl) Methi Rice (0.5 katori)</p>
+                        <p>4:00 PM: Apple (0.5 small (2-3/4″ dia)) Buttermilk (1 glass)</p>
+                        <p>5:30 PM: Coffee with Milk and Less Sugar (0.5 tea cup)</p>
+                        <p>8:50 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>9:00 PM: Sauteed Vegetables with Paneer (1 katori) Roti (1 roti/chapati)</p>
+                        <p>Green Chutney (2 tablespoon)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Day 3</td>
+                    <td>
+                        <p>6:30 AM: Cucumber Detox Water (1 glass)</p>
+                        <p>8:00 AM: Skim Milk Yoghurt (1 cup (8 fl oz)) Multigrain Toast (2 toast)</p>
+                        <p>12:00 PM: Skimmed Milk Paneer (100 grams)</p>
+                        <p>2:00 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>2:10 PM: Sauteed Vegetables with Paneer (1 katori) Roti (1 roti/chapati)</p>
+                        <p>4:00 PM: Banana (0.5 small (6″ to 6-7/8″ long)) Buttermilk (1 glass)</p>
+                        <p>5:30 PM: Tea with Less Sugar and Milk (1 teacup)</p>
+                        <p>8:50 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>9:00 PM: Lentil Curry (0.75 bowl) Methi Rice (0.5 katori)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Day 4</td>
+                    <td>
+                        <p>6:30 AM: Cucumber Detox Water (1 glass)</p>
+                        <p>8:00 AM: Fruit and Nuts Yogurt Smoothie (0.75 glass)</p>
+                        <p>Egg Omelette (1 serve(one egg))</p>
+                        <p>12:00 PM: Skimmed Milk Paneer (100 grams)</p>
+                        <p>2:00 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>2:10 PM: Green Gram Whole Dal Cooked (1 katori) Bhindi sabzi (1 katori)</p>
+                        <p>4:00 PM: Orange (1 fruit (2-5/8″ dia)) Buttermilk (1 glass)</p>
+                        <p>5:30 PM: Coffee with Milk and Less Sugar (0.5 teacup)</p>
+                        <p>8:50 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>9:00 PM: Palak Chole (1 bowl) Steamed Rice (0.5 katori)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Day 5</td>
+                    <td>
+                        <p>6:30 AM: Cucumber Detox Water (1 glass)</p>
+                        <p>8:00 AM: Skimmed Milk (1 glass) Peas Poha (1.5 katori)</p>
+                        <p>12:00 PM: Skimmed Milk Paneer (100 grams)</p>
+                        <p>2:00 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>2:10 PM: Low Fat Paneer Curry (1.5 katori) Missi Roti (1 roti)</p>
+                        <p>4:00 PM: Papaya (1 cup 1″ pieces) Buttermilk (1 glass)</p>
+                        <p>5:30 PM: Tea with Less Sugar and Milk (1 teacup)</p>
+                        <p>8:50 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>9:00 PM: Curd (1.5 katori) Aloo Baingan Tamatar Ki Sabzi (1 katori)</p>
+                        <p>Roti (1 roti/chapati)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Day 6</td>
+                    <td>
+                        <p>6:30 AM: Cucumber Detox Water (1 glass)</p>
+                        <p>8:00 AM: Mixed Sambar (1 bowl) Idli (2 idli)</p>
+                        <p>12:00 PM: Skimmed Milk Paneer (100 grams)</p>
+                        <p>2:00 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>2:10 PM: Curd (1.5 katori) Aloo Baingan Tamatar Ki Sabzi (1 katori)</p>
+                        <p>Roti (1 roti/chapati)</p>
+                        <p>4:00 PM: Cut Fruits (1 cup) Buttermilk (1 glass)</p>
+                        <p>5:30 PM: Coffee with Milk and Less Sugar (0.5 tea cup)</p>
+                        <p>8:50 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>9:00 PM: Green Gram Whole Dal Cooked (1 katori) Bhindi sabzi (1 katori)</p>
+                        <p>Roti (1 roti/chapati)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Day 7</td>
+                    <td>
+                        <p>6:30 AM: Cucumber Detox Water (1 glass)</p>
+                        <p>8:00 AM: Besan Chilla (2 cheela) Green Garlic Chutney (3 tablespoon)</p>
+                        <p>12:00 PM: Skimmed Milk Paneer (100 grams)</p>
+                        <p>2:00 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>2:10 PM: Palak Chole (1 bowl) Steamed Rice (0.5 katori)</p>
+                        <p>4:00 PM: Apple(0.5 small (2-3/4″ dia)) Buttermilk (1 glass)</p>
+                        <p>5:30 PM: Tea with Less Sugar and Milk (1 teacup)</p>
+                        <p>8:50 PM: Mixed Vegetable Salad (1 katori)</p>
+                        <p>9:00 PM: Low Fat Paneer Curry (1 katori) Missi Roti (1 roti)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <div class="container-fluid section2 " style="background-color: #d7eff9;">
+        <footer>
+
+            <div class="container">
+                <div class="footer_blocks">
+                    <div class="footer_box">
+                        <h4>Get In Touch</h4>
+                        <p><i class="fa fa-map-marker-alt"></i>India</p>
+                        <p><i class="fa fa-phone-alt"></i>+91 8670226518</p>
+                        <p><i class="fa fa-envelope"></i> soumyadipojha635@gmail.com</p>
+                        <p><i class="fa fa-envelope"></i> imshruti470@gmail.com</p>
+                        <div class="socials">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer_box">
+                        <h4>Quick Links</h4>
+                        <div class="footer_links">
+                            <a href="./index.html"><i class="fa fa-angle-right"></i>Home</a>
+                            <a href=""><i class="fa fa-angle-right"></i>About Us</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Our Features</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Classes</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="footer_box">
+                        <h4>Popular Links</h4>
+                        <div class="footer_links">
+                            <a href="./index.html"><i class="fa fa-angle-right"></i>Home</a>
+                            <a href=""><i class="fa fa-angle-right"></i>About Us</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Our Features</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Classes</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="footer_box">
+                        <h4>Opening hours</h4>
+                        <h5>Monday - Friday</h5>
+                        <p class="time">8.00 AM - 8.00 PM</p>
+                        <h5>Saturday - Sunday</h5>
+                        <p class="time">2.00 PM - 8.00 PM</p>
+                    </div>
+                </div>
+                <p class="rights">
+                    <b> © WavesGym</b>. All Rights Reserved. Designed with 🩷 by
+                    <a target="_blank" href="https://www.linkedin.com/in/soumyadip-ojha">Soumyadip Ojha</a> &
+                    <a target="_blank" href="https://www.linkedin.com/in/shrutimishra30/">Shruti Mishra</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- wp -->
+</body>
+<script>
+    AOS.init();
+</script>
+
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintain Weight</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    main{
+        padding: 50px;
+    }
+    table {
+        padding: 100px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #73a4e4;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+     @media screen and (max-width: 600px) {
+            /* Responsive styles */
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                display: block;
+                text-align: center;
+            }
+
+            th {
+                background-color: #73a4e4;
+                color: #fff;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(odd) {
+                background-color: #fff;
+            }
+
+            th, td {
+                border: none;
+                border-bottom: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+            }
+        }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <div class="navbar-brand" href="#">
+        <a href="index.html" style="font-size: 3rem;">
+          Waves Gym
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-items ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="">Personal Trainer</a></li>
+              <li><a class="dropdown-item" href="">Start your Fitness Journey</a></li>
+              <li><a class="dropdown-item" href="">1 on 1 online Program</a></li>
+              <li><a class="dropdown-item" href="https://userdetails-hw5q.onrender.com/">Become a Trainer</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Life Style
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="FrontEnd/bmi.html">BMI Tracker</a></li>
+              <li><a class="dropdown-item" href="FrontEnd/calorie.html">calorie Tracker</a></li>
+              <li><a class="dropdown-item" href="https://fitnesstracker-rzbu.onrender.com">Habit Tracker</a></li>
+              <li><a class="dropdown-item" href="#">Join Community</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gym Pass
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://gymmembersdetails-backend-1.onrender.com">Regular Pass</a></li>
+              <li><a class="dropdown-item" href="FrontEnd/emailOtp.html">1 day Free Trial</a></li>
+              <li><a class="dropdown-item" href="FrontEnd/Query.html">Query ?</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Know More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="FrontEnd/aboutus.html">About Us</a></li>
+              <li><a class="dropdown-item" href="FrontEnd/contact.html">Contact Us</a></li>
+              <li><a class="dropdown-item" href="">Trainers</a></li>
+              <li><a class="dropdown-item" href="">Feedback</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <main>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Diet Chart</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Day 1</td>
+                <td>
+                    <p>6:30 AM: Banana Milkshake (1 glass)</p>
+                    <p>8:00 AM: Paratha with Ghee (2 pieces)</p>
+                    <p>10:00 AM: Almonds (25 grams)</p>
+                    <p>12:00 PM: Paneer Tikka (1 serving)</p>
+                    <p>2:00 PM: Vegetable Biryani (1 bowl)</p>
+                    <p>4:00 PM: Mango Lassi (1 glass)</p>
+                    <p>6:00 PM: Aloo Tikki Chaat (1 plate)</p>
+                    <p>8:00 PM: Chicken Curry with Roti (1 serving)</p>
+                    <p>10:00 PM: Kheer (1 bowl)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td>
+                    <p>6:30 AM: Mango Milkshake (1 glass)</p>
+                    <p>8:00 AM: Poha with Peanuts (1 bowl)</p>
+                    <p>10:00 AM: Cashews (25 grams)</p>
+                    <p>12:00 PM: Chicken Sandwich (1 sandwich)</p>
+                    <p>2:00 PM: Chole with Bhature (1 serving)</p>
+                    <p>4:00 PM: Banana Smoothie (1 glass)</p>
+                    <p>6:00 PM: Samosa (2 pieces)</p>
+                    <p>8:00 PM: Fish Curry with Rice (1 serving)</p>
+                    <p>10:00 PM: Rasgulla (1 piece)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Day 3</td>
+                <td>
+                    <p>6:30 AM: Strawberry Lassi (1 glass)</p>
+                    <p>8:00 AM: Upma (1 bowl)</p>
+                    <p>10:00 AM: Walnuts (25 grams)</p>
+                    <p>12:00 PM: Vegetable Pulao (1 serving)</p>
+                    <p>2:00 PM: Rajma with Rice (1 serving)</p>
+                    <p>4:00 PM: Papaya Smoothie (1 glass)</p>
+                    <p>6:00 PM: Dhokla (2 pieces)</p>
+                    <p>8:00 PM: Mutton Curry with Roti (1 serving)</p>
+                    <p>10:00 PM: Gulab Jamun (1 piece)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Day 4</td>
+                <td>
+                    <p>6:30 AM: Custard Apple Milkshake (1 glass)</p>
+                    <p>8:00 AM: Rava Dosa (2 pieces)</p>
+                    <p>10:00 AM: Pistachios (25 grams)</p>
+                    <p>12:00 PM: Veggie Pizza (1 serving)</p>
+                    <p>2:00 PM: Paneer Butter Masala with Naan (1 serving)</p>
+                    <p>4:00 PM: Orange Juice (1 glass)</p>
+                    <p>6:00 PM: Onion Pakoda (1 plate)</p>
+                    <p>8:00 PM: Egg Curry with Rice (1 serving)</p>
+                    <p>10:00 PM: Jalebi (1 piece)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Day 5</td>
+                <td>
+                    <p>6:30 AM: Papaya Milkshake (1 glass)</p>
+                    <p>8:00 AM: Idli with Sambar (2 pieces)</p>
+                    <p>10:00 AM: Peanuts (25 grams)</p>
+                    <p>12:00 PM: Chicken Biryani (1 serving)</p>
+                    <p>2:00 PM: Palak Paneer with Roti (1 serving)</p>
+                    <p>4:00 PM: Sweet Lassi (1 glass)</p>
+                    <p>6:00 PM: Aloo Chaat (1 plate)</p>
+                    <p>8:00 PM: Dal Makhani with Rice (1 serving)</p>
+                    <p>10:00 PM: Rasmalai (1 piece)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Day 6</td>
+                <td>
+                    <p>6:30 AM: Banana Milkshake (1 glass)</p>
+                    <p>8:00 AM: Masala Dosa (2 pieces)</p>
+                    <p>10:00 AM: Almonds (25 grams)</p>
+                    <p>12:00 PM: Paneer Frankie (1 serving)</p>
+                    <p>2:00 PM: Veg Biryani (1 serving)</p>
+                    <p>4:00 PM: Mango Lassi (1 glass)</p>
+                    <p>6:00 PM: Pav Bhaji (1 plate)</p>
+                    <p>8:00 PM: Fish Fry with Rice (1 serving)</p>
+                    <p>10:00 PM: Gajar ka Halwa (1 bowl)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Day 7</td>
+                <td>
+                    <p>6:30 AM: Strawberry Milkshake (1 glass)</p>
+                    <p>8:00 AM: Aloo Paratha with Curd (2 pieces)</p>
+                    <p>10:00 AM: Cashews (25 grams)</p>
+                    <p>12:00 PM: Chicken Curry with Rice (1 serving)</p>
+                    <p>2:00 PM: Dal Tadka with Roti (1 serving)</p>
+                    <p>4:00 PM: Banana Smoothie (1 glass)</p>
+                    <p>6:00 PM: Mirchi Bajji (2 pieces)</p>
+                    <p>8:00 PM: Egg Fried Rice (1 serving)</p>
+                    <p>10:00 PM: Kaju Katli (1 piece)</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+
+  <div class="container-fluid section2 " style="background-color: #d7eff9;">
+    <footer>
+        
+            <div class="container">
+                <div class="footer_blocks">
+                    <div class="footer_box">
+                        <h4>Get In Touch</h4>
+                        <p><i class="fa fa-map-marker-alt"></i>India</p>
+                        <p><i class="fa fa-phone-alt"></i>+91 8670226518</p>
+                        <p><i class="fa fa-envelope"></i> soumyadipojha635@gmail.com</p>
+                        <p><i class="fa fa-envelope"></i> imshruti470@gmail.com</p>
+                        <div class="socials">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="footer_box">
+                        <h4>Quick Links</h4>
+                        <div class="footer_links">
+                            <a href="./index.html"><i class="fa fa-angle-right"></i>Home</a>
+                            <a href=""><i class="fa fa-angle-right"></i>About Us</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Our Features</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Classes</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Contact Us</a>
+                        </div>
+                    </div>
+    
+                    <div class="footer_box">
+                        <h4>Popular Links</h4>
+                        <div class="footer_links">
+                            <a href="./index.html"><i class="fa fa-angle-right"></i>Home</a>
+                            <a href=""><i class="fa fa-angle-right"></i>About Us</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Our Features</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Classes</a>
+                            <a href=""><i class="fa fa-angle-right"></i>Contact Us</a>
+                        </div>
+                    </div>
+    
+                    <div class="footer_box">
+                        <h4>Opening hours</h4>
+                        <h5>Monday - Friday</h5>
+                        <p class="time">8.00 AM - 8.00 PM</p>
+                        <h5>Saturday - Sunday</h5>
+                        <p class="time">2.00 PM - 8.00 PM</p>
+                    </div>
+                </div>
+                <p class="rights">
+                    <b> © WavesGym</b>. All Rights Reserved. Designed with 🩷 by
+                    <a target="_blank" href="https://www.linkedin.com/in/soumyadip-ojha">Soumyadip Ojha</a> &
+                    <a target="_blank" href="https://www.linkedin.com/in/shrutimishra30/">Shruti Mishra</a>
+                </p>
+            </div>
+        </footer>
+  </div>
+  <!-- wp -->
+</body>
+<script>
+  AOS.init();
+</script>
+
+</html>
